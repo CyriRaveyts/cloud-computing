@@ -16,6 +16,7 @@ Installatie en gebruik
 Open PowerShell en voer de volgende commando's uit:
 
 git clone https://github.com/cyriraveyts/cloud-computing.git
+
 cd cloud-computing
 
 2. Maak het configuratiebestand
@@ -27,10 +28,13 @@ Copy-Item .env.example .env
 Open het bestand .env in een teksteditor en vul de volgende waarden in:
 
 POSTGRES_DB=storingsmelder
+
 POSTGRES_USER=storingsmelder
+
 POSTGRES_PASSWORD=Storingsmelder123
 
-Je mag een eigen wachtwoord kiezen.c
+Je mag een eigen wachtwoord kiezen.
+
 Belangrijk: deel het .env-bestand niet en upload het niet naar GitHub. Het bevat je wachtwoord.
 
 3. Start de applicatie
