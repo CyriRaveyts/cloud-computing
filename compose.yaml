@@ -30,7 +30,6 @@ services:
 
 volumes:
   storingsmelder-data:
-    external: true
     name: storingsmelder-data
   postgres-data:
     name: storingsmelder-postgres-data
