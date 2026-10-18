@@ -17,6 +17,7 @@ Open PowerShell en voer de volgende commando's uit:
 
 git clone https://github.com/cyriraveyts/cloud-computing.git
 cd cloud-computing
+
 2. Maak het configuratiebestand
 
 Maak een kopie van het voorbeeldbestand:
@@ -31,16 +32,19 @@ POSTGRES_PASSWORD=Storingsmelder123
 
 Je mag een eigen wachtwoord kiezen.c
 Belangrijk: deel het .env-bestand niet en upload het niet naar GitHub. Het bevat je wachtwoord.
+
 3. Start de applicatie
 
 Voer vanuit de map cloud-computing het volgende commando uit:
 
 docker compose up -d --build
+
 4. Open de applicatie
 
 Open je browser en ga naar:
 
 http://localhost:8000
+
 5. Controleer de containers
 
 Om te controleren of de services draaien, gebruik je:
