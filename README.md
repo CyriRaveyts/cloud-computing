@@ -9,6 +9,62 @@ Deze applicatie is het startpunt voor **Cloud computing (B-UCLL-MGN13A)**. Je
 werkt er het hele semester mee. De applicatie zelf verandert bijna niet, wat
 verandert is hoe en waar ze draait.
 
+Installatie en gebruik
+
+1. Download het project
+
+Open PowerShell en voer de volgende commando's uit:
+
+git clone https://github.com/cyriraveyts/cloud-computing.git
+cd cloud-computing
+2. Maak het configuratiebestand
+
+Maak een kopie van het voorbeeldbestand:
+
+Copy-Item .env.example .env
+
+Open het bestand .env in een teksteditor en vul de volgende waarden in:
+
+POSTGRES_DB=storingsmelder
+POSTGRES_USER=storingsmelder
+POSTGRES_PASSWORD=Storingsmelder123
+
+Je mag een eigen wachtwoord kiezen.c
+Belangrijk: deel het .env-bestand niet en upload het niet naar GitHub. Het bevat je wachtwoord.
+3. Start de applicatie
+
+Voer vanuit de map cloud-computing het volgende commando uit:
+
+docker compose up -d --build
+4. Open de applicatie
+
+Open je browser en ga naar:
+
+http://localhost:8000
+5. Controleer de containers
+
+Om te controleren of de services draaien, gebruik je:
+
+docker compose ps
+
+Om de logs van de applicatie te bekijken:
+
+docker compose logs web
+
+Om de logs van de database te bekijken:
+
+docker compose logs db
+
+6. Stop of start de applicatie opnieuw
+
+Stop de applicatie met:
+
+docker compose down
+
+Start ze opnieuw met:
+
+docker compose up -d
+
 ---
 
 ## Wat er in deze repo zit
